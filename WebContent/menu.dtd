@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT menus (title?, menu-text?, menu*)>
+<!ELEMENT menu (menu*)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT menu-text (#PCDATA)>
+
+<!-- id 菜单id，仅仅是用来唯一标识一条记录，在XML文件中不需要，但是在数据库中必须，而且用来排序 !-->
+<!ATTLIST menu
+	id CDATA #REQUIRED
+>
+
+<!-- name 菜单名称  -->
+<!ATTLIST menu
+	name CDATA #REQUIRED
+>
+
+<!-- type 菜单类型  目前可提供的项为：slidebar=表头菜单;ztree=树菜单;folder=文件夹菜单;tabs=单项-->
+<!ATTLIST menu
+	type CDATA #REQUIRED
+>
+
+<!-- url 关联路径-->
+<!ATTLIST menu
+	url CDATA #IMPLIED
+>
+
+<!-- pid 父节点id-->
+<!ATTLIST menu
+	pid CDATA #IMPLIED
+>
+
+<!-- faicon 显示图标  可参考BIUI/themes/css/FA/css/font-awesome.css  例如css中为：fa-user，则该项为user-->
+<!ATTLIST menu
+	faicon CDATA #IMPLIED
+>
+
+<!-- visible 是否可见 ：默认为：true可见-->
+<!ATTLIST menu
+	visible CDATA #IMPLIED
+>

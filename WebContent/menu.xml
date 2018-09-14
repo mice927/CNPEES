@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "menu.dtd">
+<menus>
+  <title>小白鼠团队支持</title>
+  <menu-text>主菜单</menu-text>
+  
+  <menu id="1" name="工作台" type="slidebar" faicon="home">
+  	<menu id="101" name="工作台" type="ztree" faicon="home">
+  		<menu id="101001" name="当前测试" type="tabs" pid="101" url="txnea00001.do"/>
+  		<menu id="101002" name="历史测试记录" type="tabs" pid="101" url="txnea00004.do"/>
+  	</menu>
+  </menu>
+  
+  <menu id="8" name="题库管理" type="slidebar" faicon="database">
+  	<menu id="801" name="题库管理" type="ztree" faicon="database">
+  		<menu id="801001" name="题库管理" type="tabs" pid="801" url="txnib00001.do"/>
+  		<menu id="801002" name="试题管理" type="tabs" pid="801" url="txnep00004.do"/>
+  		<menu id="801003" name="部门题库相关" type="tabs" pid="801" url="txnep00005.do"/>
+  	</menu>
+  </menu>
+  
+  <menu id="9" name="系统设置" type="slidebar" faicon="cog">
+  	<menu id="901" name="系统设置" type="ztree" faicon="cog">
+  		<menu id="900011" name="用户查询" type="tabs" pid="901" url="txn99990.do"/>
+  		<menu id="900012" name="角色管理" type="tabs" pid="901" url="txnra00001.do"/>
+  		<menu id="900013" name="代码集配置" type="tabs" pid="901" url="txncd00001.do"/>
+  		<!-- menu id="900013" name="功能权限维护" type="tabs" pid="90001" url=""/ -->
+  	</menu>
+  </menu>
+
+</menus>
